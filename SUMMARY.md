@@ -6,4 +6,5 @@
 		* [Sistemas](pages/structure/README.md)
 	* [Views](pages/structure/README.md)
 	* [Services](pages/structure/README.md)
+* [Comentários](pages/comments/README.md)
 * [Editor de código](pages/editor/README.md)
