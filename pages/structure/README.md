@@ -6,6 +6,10 @@ A estrutura do diretório é um dos pontos mais importantes de organização do 
 
 Para evitar a disperção de funcionalidades destinadas à um mesmo recurso, elas devem ser coletadas no mesmo lugar, guardadas numa pasta com o nome do recurso, tendo index.ts como realmente um indice para todas as funcionalidades do recurso.
 
+### Por que orientação à recursos?
+
+Orientação recursos acontece quando um mesmo dado (como por exemplo usuário, publicação, comentário) está presente em vários tipos de estrutura (como query, model, presenter, service, etc). Para que você não precise ficar caçando todos as estruturas para criar um dado (e acabar esquecendo naquele lugar que você só descobre depois quando não entende por que algo está dando errado), você centraliza eles em um lugar só. Quando você tem poucos dados espalhados pelas mesmas estruturas, você pode fazer orientação à funcionalidade (functional orientation), que seria o inverso, onde o dado está espalhado pelas estruturas do projeto.
+
 ### Recursividade de dados
 
 Existem casos onde dependencias do recurso podem ser interligadas por vias de mão dupla. Por isso, elas não podem estar presentes no mesmo. E precisam ter suas dependencias injetadas pelo indice. Seguindo o principio de inversão de dependencias do desing SOLID.

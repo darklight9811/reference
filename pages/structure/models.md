@@ -45,9 +45,13 @@ Caso a aplicação tenha acesso direto à um banco de dados (seja interno, por c
 
 Aqui serão informadas somente questões de organização de arquivo da store, caso queira ver sobre a estruturação do código para a store, procure o link [react/store](/pages/react/store.md). Store são uma maneira de unificar o fluxo de dados através da aplicação de uma maneira central (de unica verdade). A montagem da própria store não se dá dentro destes arquivos. Somente as actions, reducers e interfaces relativos somente ao modelo.
 
+### Services
+
+Um serviço é basicamente uma camada para a criação e gerenciamento de regras de negócio. Regras de negócio consistem de lógica para gerenciar dados, como validação, filtro e outras coisas. Services geralmente precisarão de injection do query builder. Você pode enxergar o service como o setter e o presenter como o getter.
+
 ### Presenters
 
-Presenters são formatações para visualização do usuário, assim como o query builder, podem ser agrupados dentro de uma pasta ou dentro de somente um arquivo.
+Presenters são formatações para visualização do usuário, assim como o query builder, podem ser agrupados dentro de uma pasta ou dentro de somente um arquivo. Você pode enxergar o service como o setter e o presenter como o getter.
 
 ## Exemplo de modelo
 ```
@@ -59,6 +63,7 @@ Presenters são formatações para visualização do usuário, assim como o quer
 |	|		|-- index.ts
 |	|		|-- actions.ts
 |	|		|-- reducers.ts
+|	|		|-- services.ts
 |	|-- outro model
 |-- index.ts
 ```
